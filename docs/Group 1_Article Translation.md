@@ -159,7 +159,7 @@ ASYNC_MASTER），但没有配置slave Broker服务器，则将返回该状态�
 或者在请求超时之前返回同步到Slave服务器超时（FLUSH_SLAVE_TIMEOUT）。
 ## 消息大小
 建议消息的大小不要超过512K。
-## 异步发送（AsyncSending）
+## 异步发送
 默认方法send（msg）会在得到返回响应之前一直被阻塞。因此，如果用户重视性能，那
 么建议使用send（msg，callback），这样消息发送将以异步方式进行。
 ## 生产者组
